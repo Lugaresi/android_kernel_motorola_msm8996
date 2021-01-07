@@ -7,7 +7,7 @@ static char new_command_line[COMMAND_LINE_SIZE];
 
 static int cmdline_proc_show(struct seq_file *m, void *v)
 {
-	seq_printf(m, "%s\n", saved_command_line);
+	seq_printf(m, "%s\n", new_command_line);
 	return 0;
 }
 
